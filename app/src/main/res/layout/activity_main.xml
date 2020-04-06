@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="738dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/weather2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Get your weather?"
+        android:textColor="#090808"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/getWeatherButton"
+        android:layout_width="149dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="37dp"
+        android:background="#C7A02E"
+        android:onClick="getWeather"
+        android:text="Get Weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityInput" />
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Enter your City here?"
+        android:inputType="textPersonName"
+        android:textColor="#D010F1"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="350dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="28dp"
+        android:textColor="#ED430D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descTextView" />
+
+    <TextView
+        android:id="@+id/descTextView"
+        android:layout_width="241dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="33dp"
+        android:textColor="#FA4309"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getWeatherButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
